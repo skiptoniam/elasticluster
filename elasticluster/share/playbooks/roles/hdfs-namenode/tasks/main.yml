@@ -33,7 +33,7 @@
     - namenode
   service:
     name="{{item}}"
-    state=stopped
+    state=started
     enabled=yes
   loop:
     - hadoop-hdfs-namenode
