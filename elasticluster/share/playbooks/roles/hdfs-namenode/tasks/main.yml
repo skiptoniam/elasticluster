@@ -26,14 +26,6 @@
   become: yes
   become_user: hdfs
 
-- name: Make entire HDFS world-writable
-  tags:
-    - hadoop
-  command:
-    hdfs dfs -chmod 0777 /
-  become: yes
-  become_user: hdfs
-
 - name: Start HDFS services (NameNode)
   tags:
     - hadoop
@@ -46,5 +38,13 @@
   loop:
     - hadoop-hdfs-namenode
     - hadoop-hdfs-secondarynamenode
+    - sudo
 
 
+- name: Make entire HDFS world-writable
+  tags:
+    - hadoop
+  command:
+    hdfs dfs -chmod 0777 /
+  become: yes
+  become_user: hdfs
