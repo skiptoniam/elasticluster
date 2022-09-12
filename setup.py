@@ -140,7 +140,7 @@ setup(
         'msrestazure',
         # EC2 clouds
         'boto>=2.48',
-        'pycrypto',   # for computing RSA key hash, see: PR #132
+        'pycryptodome',   # for computing RSA key hash, see: PR #132
         # Google Cloud
         'google-api-python-client',
         'google-compute-engine',
