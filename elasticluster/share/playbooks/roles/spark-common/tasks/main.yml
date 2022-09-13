@@ -25,7 +25,7 @@
     name:
       - spark-extras # External/extra libraries for Apache Spark
     state: '{{ pkg_install_state }}'
-  when: 'bigtop_release in ["1.1.0", "1.2.0", "1.2.1", "1.3.0"]'
+  when: 'bigtop_release in ["1.1.0", "1.2.0", "1.2.1", "1.3.0","3.1.1"]'
 
 
 - name: Check if Py4J version-independent `.zip` archive exist
