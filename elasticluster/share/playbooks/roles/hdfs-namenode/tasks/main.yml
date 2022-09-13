@@ -38,8 +38,6 @@
   loop:
     - hadoop-hdfs-namenode
     - hadoop-hdfs-secondarynamenode
-    - sudo
-
 
 - name: Make entire HDFS world-writable
   tags:
