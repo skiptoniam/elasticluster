@@ -32,7 +32,7 @@
     - hdfs
     - namenode
   service:
-    name="{{item}}"
+    name="test"
     state=started
     enabled=yes
   loop:
