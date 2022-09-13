@@ -19,6 +19,7 @@
       - sudo
       - lsb-release
       - libssl1.0.0
+      - libclang-dev
     state: '{{ pkg_install_state }}'
 
 
