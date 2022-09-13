@@ -10,4 +10,4 @@
 bigtop_release: '3.1.1'
 
 # Where to get BigTop files from
-bigtop_mirror: 'http://www.nic.funet.fi/pub/mirrors/apache.org'
+bigtop_mirror: 'https://www.nic.funet.fi/pub/mirrors/apache.org'
