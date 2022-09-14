@@ -25,7 +25,7 @@
 
 - name: Set R repository params (Ubuntu)
   set_fact:
-    r_packages_repo: 'deb {{r_cran_mirror_url}}/bin/linux/ubuntu {{ansible_distribution_release}}-cran40/'
+    r_packages_repo: 'deb {{r_cran_mirror_url}}/bin/linux/ubuntu {{ansible_distribution_release}}-cran35/'
     r_packages_keyserver: keyserver.ubuntu.com
     r_packages_signing_key: 'E298A3A825C0D65DFD57CBB651716619E084DAB9'
   when: is_ubuntu
@@ -33,7 +33,7 @@
 
 - name: Set R repository params (Debian)
   set_fact:
-    r_packages_repo: 'deb {{r_cran_mirror_url}}/bin/linux/debian {{ansible_distribution_release}}-cran40/'
+    r_packages_repo: 'deb {{r_cran_mirror_url}}/bin/linux/debian {{ansible_distribution_release}}-cran35/'
     r_packages_keyserver: keys.gnupg.net
     r_packages_signing_key: 'E19F5F87128899B192B1A2C2AD5F960A256A04AF'
   when: is_debian
