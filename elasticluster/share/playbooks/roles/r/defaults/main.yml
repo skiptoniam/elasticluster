@@ -64,4 +64,4 @@ r_cluster_support: '{{ groups.r|default([])|length > 1 }}'
 ## there should be no need for customization below this line
 
 # preferred CRAN mirror, see: https://cran.r-project.org/mirrors.html
-r_cran_mirror_url: 'http://cloud.r-project.org/'
+r_cran_mirror_url: 'https://cran.ms.unimelb.edu.au/'
