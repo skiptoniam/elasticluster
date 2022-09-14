@@ -6,4 +6,4 @@
 # schema version 1.2.0 ...
 # hive schema is now upto 3.1.2
 
-hive_schema_version: '3.1.2'
+hive_schema_version: '3.1.0'
